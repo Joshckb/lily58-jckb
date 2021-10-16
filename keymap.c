@@ -1,10 +1,6 @@
 #include QMK_KEYBOARD_H
 #include "joshckb/joshckb.h"
 
-#ifdef OLED_DRIVER_ENABLE
-#include "oled.c"
-#endif
-
 #ifdef ENCODER_ENABLE
 #include "encoder_utils.h"
 
