@@ -18,7 +18,7 @@ SWAP_HANDS_ENABLE = no      # Enable one-hand typing
 OLED_DRIVER_ENABLE = no     # OLED display - Need to fix pins on my keyboard
 ENCODER_ENABLE = no
 WPM_ENABLE = no
-TAP_DANCE_ENABLE = yes
+TAP_DANCE_ENABLE = no
 UNICODE_ENABLE = no
 
 # Do not enable SLEEP_LED_ENABLE. it uses the same timer as BACKLIGHT_ENABLE
