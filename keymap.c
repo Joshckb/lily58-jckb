@@ -17,7 +17,7 @@ bool encoder_update_user(uint8_t index, bool clockwise) {
 
   encoder_action(get_encoder_mode(), clockwise);
 
-  return true;
+  return false;
 }
 #endif
 

@@ -16,7 +16,6 @@ BLUETOOTH_ENABLE = no       # Enable Bluetooth with the Adafruit EZ-Key HID
 RGBLIGHT_ENABLE = no        # Enable WS2812 RGB underlight.
 SWAP_HANDS_ENABLE = no      # Enable one-hand typing
 OLED_DRIVER_ENABLE = no     # OLED display - Need to fix pins on my keyboard
-ENCODER_ENABLE = no
 WPM_ENABLE = no
 TAP_DANCE_ENABLE = no
 UNICODE_ENABLE = no
@@ -26,4 +25,8 @@ SLEEP_LED_ENABLE = no       # Breathing sleep LED during USB suspend
 
 SRC += joshckb/joshckb.c
 SRC += joshckb/os_mode_utils.c
+
+ifeq ($(ENCODER_ENABLE), yes)
+    SRC += encoder_utils.c
+endif
 
