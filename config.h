@@ -9,11 +9,13 @@
 #define TAB_TIMER_TERM 500
 #define RESET_THRESHOLD 1500
 
+#undef PERMISSIVE_HOLD
+
 #define NO_ACTION_MACRO
 #define NO_ACTION_FUNCTION
 
-// Encoder
+#if defined(ENCODER_ENABLE)
 #define ENCODERS_PAD_A { F4 }
 #define ENCODERS_PAD_B { F5 }
 #define ENCODER_RESOLUTION 4
-
+#endif
