@@ -2,8 +2,6 @@
 
 #include "joshckb/joshckb.h"
 
-#include "keymap.h"
-
 #ifdef ENCODER_ENABLE
 #include "encoder_utils.h"
 
